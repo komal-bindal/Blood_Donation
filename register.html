@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donor Registeration</title>
+	<style type="text/css">
+		.heading{
+				color : white;
+				font-family: cursive;
+				font-size : 30px;
+				float:left;
+				font-weight : bold;
+				padding-left : 10px;
+				margin-top : 20px;
+			}
+			.logoimg{
+				float: left; 
+				margin-top : 20px; 
+				margin-left : 20px;
+				box-shadow: 0px 0px 20px 20px #ff61241f; 
+			}
+			#top-bar{
+				background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("download.jpg");
+				background-repeat:  no-repeat ; 
+  				background-size: cover;
+  				height: 130px;
+			}
+			button{
+				float: right;
+				height: 40px;
+				width: 150px;
+				padding:5px;
+				margin:40px auto;
+				margin-right: 40px;
+				background: linear-gradient(to left, #ff105f, #ffad06);
+				border-radius: 30px;
+				font-family: cursive;
+				border: none;
+				cursor: pointer;
+				outline: none;
+			}
+			#Registeration{
+				margin: 20px auto;
+				position: center;
+				width: 400px;
+			}
+			.Registeration-heading{
+				font-style: oblique;
+				font-family: cursive;
+				font-size: 25px;
+				position: center;
+				
+				text-decoration: underline;
+			}
+			#Registeration-form{
+				margin: 30px auto;
+				font-family: cursive;
+			}
+			input{
+				font-style: cursive;
+				outline: none;
+				border-style: none;
+				border-bottom: solid;
+				border-bottom-width: 60px: 
+			}
+
+	</style>
+</head>
+<body>
+	<div id = "top-bar">
+		<div class ="logoimg"> 
+				<img src="logo.jpg" height = 80px width = 80px>
+		</div>
+		<div class = "heading">
+			BLOOD <br>
+			DONATION
+		</div>
+		<div id = "home">
+			<a href = "index.php"><button type="button">Back to home</button></a>
+		</div>
+	</div>
+	<div id = "Registeration">
+		<div class = "Registeration-heading"> Donor Registeration Form</div>
+		<form id ="Registeration-form">
+			Donor Full Name:
+			<input type="text" name="donorName" placeholder="Full name" required=""><br><br>
+			Gender : <input type="radio" name="gender" required>Male <input type="radio" name="gender">Female
+			<input type="radio" name="gender">Other<br><br>
+			Birth Date:
+			<input type="date" name="birth-date" required><br><br>
+			Blood Group:
+			<select>
+				<option selected></option>
+				<option>A+</option>
+				<option>A-</option>
+				<option>O+</option>
+				<option>O-</option>
+				<option>B+</option>
+				<option>B-</option>
+				<option>AB+</option>
+				<OPTION>AB-</OPTION>
+			</select><br><br>
+			Mobile Number: 
+			<input type="Number" name="mobileNumber" placeholder="1234567890" required=""><br><br>
+			Address:
+			<input type="text" name="address" required=""><br><br>
+			State:
+			<input type="text" name="State" required=><br><br>
+			Pincode:
+			<input type="number" name="pincode" placeholder="012345" required><br><br>
+			<input type="checkbox" name="Agree">I agree to the terms and conditions.
+			<button type="submit" value="Submit">Submit</button> 
+	</div>
+</body>
+</html>
